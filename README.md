@@ -55,7 +55,7 @@ Abschnitt anklicken, Prüfvorlage herunterladen, Felder `source` (öffentlich be
 
 Details: [Klassifikation und Quellen](docs/DATA.md). `public/data/audit.jsonl` protokolliert ungeklärte/verwor­fene Fälle. Statistik berechnet Fahrtrichtungskilometer, **keine physische Autobahnlänge**. Beide getrennten Fahrbahnen zählen jeweils; `oneway=no` zählt jede Richtung einmal. Keine fingierte Halbierung.
 
-Hintergrund: Standard-OSM-Rastertiles, sichtbare Attribution, keine Offline-/Bulk-Downloads. Nutzung nur im Rahmen von https://operations.osmfoundation.org/policies/tiles/ ; keine Verfügbarkeitsgarantie. Bei stärkerem Publikumsverkehr eigenen geeigneten Tile-Anbieter bzw. selbst statisch gehostete Kacheln einsetzen. Schriftarten werden optional von Google Fonts geladen, Systemschriften funktionieren ohne sie. Die Segmentdaten funktionieren unabhängig von den Hintergrundtiles.
+Hintergrund: Standard-OSM-Rastertiles, sichtbare Attribution, keine Offline-/Bulk-Downloads. Nutzung nur im Rahmen von https://operations.osmfoundation.org/policies/tiles/ ; keine Verfügbarkeitsgarantie. Bei stärkerem Publikumsverkehr eigenen geeigneten Tile-Anbieter bzw. selbst statisch gehostete Kacheln einsetzen. Schriftarten sind lokale Systemschriften; es werden keine Google Fonts geladen. Die Segmentdaten funktionieren unabhängig von den Hintergrundtiles.
 
 OSM-Daten © OpenStreetMap-Mitwirkende, ODbL 1.0 (https://www.openstreetmap.org/copyright). Abgeleitete Datenbank steht unter ODbL 1.0; GeoJSON und Manifest sind auf der Website herunterladbar. Änderungen/Korrekturen sind mit Quellen dokumentiert. Software: MIT (LICENSE). Rechtliche Hinweise sind Bestandteil der Oberfläche.
 
@@ -64,3 +64,7 @@ Der reale Saarland-Startdatensatz kann mit `bash pipeline/sample.sh` reproduzier
 Die Deutschlandpipeline benötigt zusätzlich die CLI `osmium` (Debian/Ubuntu-Paket `osmium-tool`). Vor dem Aufbau des Knotenindex reduziert `osmium tags-filter` den Extrakt auf Autobahnen mit referenzierten Knoten. Der Input-Hash im Manifest bezieht sich auf diese gefilterte PBF-Datei.
 
 Für eine schnelle erste Ansicht kann der manuelle Workflow **Publish regional preview** den mitgelieferten, sichtbar als regional gekennzeichneten Saarland-Datensatz veröffentlichen. Er ersetzt die dann veröffentlichte Karte; nur bewusst ausführen. Der reguläre Deutschlandworkflow veröffentlicht nach erfolgreichem Datenimport das vollständige Netz.
+
+## Rechtlicher Prüfstand
+
+Siehe [Prüfbericht](docs/LEGAL_REVIEW.md). Anbieterkennzeichnung und vollständige Datenschutzangaben sind noch offen; privater Hobbybetrieb ist keine pauschale Befreiung. Das Projekt wird nicht als rechtssicher freigegeben. Die technischen Verbesserungen übernehmen keine persönlichen Kontaktdaten.
