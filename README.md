@@ -23,6 +23,7 @@ Der ausgelieferte Datenumfang ist im `public/data/manifest.json` sichtbar. Ein r
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+# Debian/Ubuntu: sudo apt-get install osmium-tool
 bash pipeline/update.sh
 npm run build
 ```
@@ -59,3 +60,5 @@ Hintergrund: Standard-OSM-Rastertiles, sichtbare Attribution, keine Offline-/Bul
 OSM-Daten © OpenStreetMap-Mitwirkende, ODbL 1.0 (https://www.openstreetmap.org/copyright). Abgeleitete Datenbank steht unter ODbL 1.0; GeoJSON und Manifest sind auf der Website herunterladbar. Änderungen/Korrekturen sind mit Quellen dokumentiert. Software: MIT (LICENSE). Rechtliche Hinweise sind Bestandteil der Oberfläche.
 
 Der reale Saarland-Startdatensatz kann mit `bash pipeline/sample.sh` reproduziert werden (jeweils neuester Extrakt; den exakten historischen Stand mit dem im Manifest dokumentierten Input-Hash separat archivieren).
+
+Die Deutschlandpipeline benötigt zusätzlich die CLI `osmium` (Debian/Ubuntu-Paket `osmium-tool`). Vor dem Aufbau des Knotenindex reduziert `osmium tags-filter` den Extrakt auf Autobahnen mit referenzierten Knoten. Der Input-Hash im Manifest bezieht sich auf diese gefilterte PBF-Datei.
