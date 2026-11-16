@@ -62,3 +62,5 @@ OSM-Daten © OpenStreetMap-Mitwirkende, ODbL 1.0 (https://www.openstreetmap.org/
 Der reale Saarland-Startdatensatz kann mit `bash pipeline/sample.sh` reproduziert werden (jeweils neuester Extrakt; den exakten historischen Stand mit dem im Manifest dokumentierten Input-Hash separat archivieren).
 
 Die Deutschlandpipeline benötigt zusätzlich die CLI `osmium` (Debian/Ubuntu-Paket `osmium-tool`). Vor dem Aufbau des Knotenindex reduziert `osmium tags-filter` den Extrakt auf Autobahnen mit referenzierten Knoten. Der Input-Hash im Manifest bezieht sich auf diese gefilterte PBF-Datei.
+
+Für eine schnelle erste Ansicht kann der manuelle Workflow **Publish regional preview** den mitgelieferten, sichtbar als regional gekennzeichneten Saarland-Datensatz veröffentlichen. Er ersetzt die dann veröffentlichte Karte; nur bewusst ausführen. Der reguläre Deutschlandworkflow veröffentlicht nach erfolgreichem Datenimport das vollständige Netz.
