@@ -1,0 +1,24 @@
+{
+  "mode": "osm",
+  "snapshot": "2026-11-15T21:22:28Z",
+  "generated_at": "2026-11-16T10:37:13.135148+00:00",
+  "source": "https://download.geofabrik.de/europe/germany/saarland.html",
+  "scope": "Regionaler Testdatensatz · Saarland",
+  "license": "ODbL-1.0",
+  "length_unit": "Fahrtrichtungskilometer",
+  "counts": {
+    "unlimited_confirmed": 760,
+    "limited_confirmed": 736,
+    "unlimited_candidate": 88,
+    "unknown": 56
+  },
+  "lengths_km": {
+    "unlimited_confirmed": 290.1790000000004,
+    "limited_confirmed": 180.81859999999978,
+    "unlimited_candidate": 19.26823999999999,
+    "unknown": 14.529559999999996
+  },
+  "rejected": 0,
+  "sha256": "0f311f833a96168e99ad36673edf9aa3b1893388b6986113977a896fb1ccb031",
+  "input_sha256": "bc325dffc8868f0687f00ff414ac9f50e2be970a77c28c628876b7856bb732eb"
+}

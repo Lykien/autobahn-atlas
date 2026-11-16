@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.cache/
+*.pbf
+*.osm
+__pycache__/
+.venv/
+*.tmp
+*.tsbuildinfo
